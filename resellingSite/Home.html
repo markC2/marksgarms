@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="./JS/script.js"></script>
+        <script>
+                    function changeBg(){
+                        const images = ['url("Images/1.jpg")', 'url("Images/3.jpg")', 'url("Images/4.jpg")']
+
+                        const section = document.querySelector('section')
+                        const bg = images[Math.floor(Math.random()*images.length)];
+                        document.body.style.backgroundImage = bg;
+                    }
+
+                    //setInterval(changeBg, 2500);
+
+                    function openGallery(){
+                        window.open("gallery.html")
+                    }       
+
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <div class ="side-menu" onmouseleave="closeMenu()">
+                <button onclick="showMenu()" class="menuBtn" ><i class="fa fa fa-bars"></i>  </button>
+
+                <div id ="dropdown" class ="dropdown-content" > 
+
+                    <a href="Home.html"> Home</a></li>
+                    <a href="gallery.html"></i> Gallery</a></li>
+                    <a href="https://www.depop.com/mc678/"> Depop</a></li>
+                    <a href="https://www.ebay.co.uk/usr/marksgarms"> Ebay</a></li>
+
+                </div>
+
+            </div>
+
+        </header>
+        <main>
+            <section>
+            <h2 onclick="openGallery()">Marks Garms</h2>
+            </section>
+
+            
+            
+
+
+            
+    
+        </main>
+        <footer>
+            <ul class="footer-shops-link">
+                <li><a href="Home.html"><i class ="fa fa fa-home"></i> Home</a></li>
+                <li><a href="gallery.html"><i class ="fa fa fa-t-shirt"></i> Gallery</a></li>
+                <li><a href="https://www.depop.com/mc678/"><i class ="fa fa fa-cart-shopping"></i> Depop</a></li>
+                <li><a href="https://www.ebay.co.uk/usr/marksgarms"><i class ="fa fa fa-cart-shopping"></i> Ebay</a></li>
+              
+                
+            </ul>
+
+
+
+        </footer>
+        <head>
+    </body>
+</html>

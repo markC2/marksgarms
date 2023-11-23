@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+section{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+    
+    
+    padding-top: 25rem;
+    
+    
+ 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    
+    
+    
+
+}
+
+
+body{
+    background-image: url("../Images/4.jpg");
+}
+
+
+section h2{
+    font-size: 5vw;
+    color:#000;
+    background:#fff;
+    padding: 20px 40px;
+    mix-blend-mode: exclusion;
+    font-family:'Segoe UI', Tahoma,  Verdana, sans-serif;
+    cursor: pointer;
+   
+}
+
+ 
+section h4{
+    flex-direction: row;
+}
+
+
+
+nav li{
+    list-style-type: none;
+    float: right;
+}
+
+
+.side-menu{
+    float: right;
+    cursor: pointer;
+    display: block;
+    
+}
+
+
+
+
+
+
+
+/* css for gallery*/
+#HeaderText{
+    font-size: 2vw;
+    color:black;
+    padding: 20px 40px;
+    width: 25%;
+    opacity: 0.4;
+    font-weight: 100;
+    float: right;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+ 
+
+}
+
+
+.listings{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.product-card{
+    display: flex;
+    flex-grow: 1;
+    padding: 2%;
+    flex-basis: 16%;
+    
+
+   
+    
+
+    
+   
+
+
+}
+
+
+.image-listing-buttons{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 250px;
+    height: 250px;
+    border: black;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-radius: 0.2rem;
+}
+
+
+footer{
+    bottom:0;
+    position: fixed;
+    height: 60px;
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+}
+
+.footer-shops-link{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.footer-shops-link li{
+    padding-left: 50px;
+    padding-right: 50px;
+
+   
+}
+
+.footer-shops-link li a{
+    flex-direction: row;
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    
+}
+
+
+.footer-shops-link li a:hover, .SideNav li a:hover{
+    border-bottom: 2px solid #fff; 
+}
+
+
+
+/* css for side menu */
+
+.menuBtn{
+   border: none;
+   padding: 16px;
+   cursor: pointer;
+   padding-right:180px ;
+   
+   
+
+}
+
+.side-menu{
+    
+    position: relative;
+    display:block;
+
+
+}
+/* hidden by default*/
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+
+}
+
+/* links inside dropdown*/
+.dropdown-content a, p{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+/* change color of drop down links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* show the drop down menu*/
+.show{
+    display: block;
+}
+
+
+
+/* alternative screen size for gallery page */
+
+@media (max-width: 920px) {
+    .product-card {
+      flex: 1 21%;
+    }
+  }
